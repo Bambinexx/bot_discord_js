@@ -26,3 +26,32 @@ bot.on("message", message => {
         message.pin()
     }
 });
+
+bot.on("message", message => {
+    if(message.content === "!help") {
+        message.channel.send({
+            embed: {
+                color: 3447003,
+                description: "les commandes de fdp",
+                fields: [
+                    {
+                        name: "!ping",
+                        value: "une commande de merde pour ping"
+                    },
+                    {
+                        name: "!pin",
+                        value: "une commande de merde pour pin ton message de merde"
+                    },
+                    {
+                        name: "bonjour",
+                        value: "qu'est-ce ça fout là"
+                    },
+                    {
+                        name: "!help",
+                        value: "une commande de merde pour afficher ce message de merde"
+                    }
+                ]
+            }
+        });
+    }
+});
