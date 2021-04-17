@@ -5,7 +5,7 @@ bot.on("ready", function() {
     console.log("ce message ne sert à rien")
 });
 
-bot.login("ODMyOTYyNDAyNjQyNDI3OTU0.YHrasA.UotF5oRWA2wWwOIsh-8yeuXjlPI")
+bot.login("t'as vraiment cru ?")
 
 bot.on("message", message => {
     if(message.content === "!ping") {
