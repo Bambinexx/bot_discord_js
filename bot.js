@@ -16,5 +16,13 @@ bot.on("message", message => {
 bot.on("message", message => {
     if(message.content === "!bonjour") {
         message.reply("casse toi")
+        message.react("🖕")
+        message.react(bot.emojis.cache.get("832986588039872572"));
+    }
+});
+
+bot.on("message", message => {
+    if(message.content.startsWith("!pin")) {
+        message.pin()
     }
 });
